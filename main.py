@@ -969,6 +969,8 @@ dispatcher.add_handler(CommandHandler('clear', clear))
 dispatcher.add_handler(CallbackQueryHandler(submission, pattern=submission_pattern))
 dispatcher.add_handler(MessageHandler(Filters.text & ~Filters.command & Filters.regex(r'^\.$'), auto_count))
 
+
+
 # Start the bot
 updater.start_polling()
 updater.idle()
