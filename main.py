@@ -1,4 +1,3 @@
-
 import logging
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, PhotoSize
 from telegram.ext import Updater, CommandHandler, CallbackContext, CallbackQueryHandler, MessageHandler, Filters, ConversationHandler
@@ -405,7 +404,7 @@ def base_price(update, context):
                         InlineKeyboardButton("RIP IVs/EVs", callback_data=f'ripivsevs_{seller_id}'),
                     ],
                     [
-                        InlineKeyboardButton("Base High", callback_data='pbasehigh_{seller_id}'),
+                        InlineKeyboardButton("Base High", callback_data=f'pbasehigh_{seller_id}'),
                         InlineKeyboardButton("Wrong Information", callback_data=f'pwronginfo_{seller_id}'),
                     ],
                     [
